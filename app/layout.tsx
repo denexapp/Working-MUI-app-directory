@@ -1,5 +1,5 @@
 import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
-import { MuiSetup } from "./MuiSetup";
+import { ClientProviders } from "./ClientProviders";
 
 export const metadata: Metadata = {
   title: "My title",
@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <MuiSetup>{children}</MuiSetup>
+        <ClientProviders>{children}</ClientProviders>
       </body>
     </html>
   );

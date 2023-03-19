@@ -1,23 +1,17 @@
 "use client";
 
-import { Button, Stack, Typography } from "@mui/material";
+import { Button } from "@skbkontur/react-ui";
+import styled from "@emotion/styled";
+
+const PurpleTestBox = styled.div`
+  width: 100px;
+  height: 100px;
+  border: 5px purple solid;
+`;
 
 export const Home = () => (
-  <Stack sx={{ minHeight: "100vh", padding: "64px" }}>
-    <Stack
-      sx={{ flexGrow: 1, justifyContent: "center", alignItems: "center" }}
-      component="main"
-    >
-      <Typography variant="h5">main content</Typography>
-      <Button variant="contained">test</Button>
-    </Stack>
-    <Stack
-      direction="row"
-      sx={{ justifyContent: "space-between" }}
-      component="footer"
-    >
-      <Typography>footer</Typography>
-      <Typography>stuff</Typography>
-    </Stack>
-  </Stack>
+  <>
+    <PurpleTestBox />
+    <Button>test</Button>
+  </>
 );
