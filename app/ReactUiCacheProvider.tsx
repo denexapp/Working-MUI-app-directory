@@ -7,7 +7,7 @@ import { useServerInsertedHTML } from "next/navigation";
 export default function ReactUiCacheProvider({
   children,
 }: {
-  children: JSX.Element;
+  children: React.ReactNode;
 }) {
   useServerInsertedHTML(() => {
     return (
